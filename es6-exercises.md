@@ -26,7 +26,17 @@ class User {
   }
   
   welcome() {
-    console.log('Welcome ' + this.firstname + ' ' + this.lastname; 
+    return 'Welcome ' + this.firstname + ' ' + this.lastname; 
   }
 }
 ```
+
+## Les constantes
+
+- Créer une instance de votre classe avec const
+
+`const user = new User('Julien', 'Liétart');`
+
+- Dites bonjour à votre utilisateur !
+
+`document.getElementById('root').innerHTML = user.welcome();`
