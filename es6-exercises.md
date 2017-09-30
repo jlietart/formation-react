@@ -50,3 +50,18 @@ class User {
 - Changer de meilleur ami en redefinissant bestFriend
 
 `bestFriend = new User('Obi wan', 'Kenobi');`
+
+- Vérifiez si votre ami appartient au côté obscur...
+
+```
+let isInDarkSide = true;
+
+if (bestFriend.lastname === 'Kenobi') {
+	let isInDarkSide = false;
+  //document.getElementById('root').innerHTML = isInDarkSide;
+}
+
+document.getElementById('root').innerHTML = isInDarkSide;
+```
+
+Ici, true s'affiche car la variable `let isInDarkSide` est redefinie à l'intérieur du if et donc hors de portée lors de l'affichage dans le DOM (hors de la boucle)
