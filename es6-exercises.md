@@ -40,3 +40,13 @@ class User {
 - Dites bonjour à votre utilisateur !
 
 `document.getElementById('root').innerHTML = user.welcome();`
+
+## Les variables avec portée
+
+- Créer un meilleur ami à votre utilisateur avec let
+
+`let bestFriend = new User('Dark', 'Vador');`
+
+- Changer de meilleur ami en redefinissant bestFriend
+
+`bestFriend = new User('Obi wan', 'Kenobi');`
