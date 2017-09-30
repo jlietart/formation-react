@@ -75,3 +75,24 @@ welcome() {
   return `Welcome ${this.firstname} ${this.lastname}`; 
 }
 ```
+
+## Valeurs par défaut
+
+- Ajouter des valeurs par défaut à vos variables firstname et lastname.
+
+```
+class User {
+  constructor(firstname = 'firstname', lastname = 'lastname') {
+    this.firstname = firstname;
+    this.lastname = lastname;
+  }
+  
+  welcome() {
+    return `Welcome ${this.firstname} ${this.lastname}`; 
+  }
+}
+
+const user = new User();
+
+document.getElementById('root').innerHTML = user.welcome();
+```
