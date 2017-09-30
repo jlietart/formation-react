@@ -65,3 +65,13 @@ document.getElementById('root').innerHTML = isInDarkSide;
 ```
 
 Ici, true s'affiche car la variable `let isInDarkSide` est redefinie à l'intérieur du if et donc hors de portée lors de l'affichage dans le DOM (hors de la boucle)
+
+## Template strings
+
+- Transformez la méhode welcome en utilisant une template string comme ceci:
+
+```
+welcome() {
+  return `Welcome ${this.firstname} ${this.lastname}`; 
+}
+```
